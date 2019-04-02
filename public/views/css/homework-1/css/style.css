@@ -1,5 +1,28 @@
-body {
-  background-color: indigo;
-  color: #ddd;
-  font-size: 40px;
+h1 {
+  font-size: 50px
+}
+h2 {
+  font-size: 2em
+}
+h3 {
+  font-size: 0.8%
+}
+h4 {
+  font-size: 2rem
+}
+h5 {
+  font-size: 2vw
+}
+h6 {
+  font-size: 3vh
+}
+tr:nth-child(2n) {
+  background-color: #ddd
+}
+td:first-letter {
+  color: red
+}
+td:nth-child(n+5) {
+  font-weight: bold;
+  font-style: italic;
 }
