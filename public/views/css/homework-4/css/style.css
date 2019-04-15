@@ -1,0 +1,178 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #444;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Unknown props */
+/* box-shadow: 0 2px 5px rgba(0,0,0,.26); - header */
+/* border-radius: 3px; - card rounding */
+/* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); - card shadow */
+/* border-top-left-radius: 3px;
+  border-top-right-radius: 3px; - for card image */
+
+/* Your styles go below */
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 1170px;
+  padding: 0 15px;
+}
+.row {
+  margin: 0 -15px;
+}
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.column {
+  width: 25%;
+  padding: 0 15px;
+  float: left;
+}
+.header {
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  width: 100%;
+  color: #fff;
+  background-color: mediumseagreen;
+  line-height: 60px;
+}
+.nav-left {
+  float: left;
+}
+.nav-right {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-aut-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;   
+}
+.nav-link:last-child {
+  margin-right: 0;
+}
+.nav-aut-link:last-child {
+  margin-right: 0;
+}
+.nav-link-active:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+}
+.intro {
+  height: 400px;
+  background-image: url("../images/intro.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  line-height: 400px;
+  text-align: center;
+  font-size: 80px
+}
+.content {
+  padding: 40px 0;
+  background-image: url(../images/pattern.png);
+}
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px; 
+}
+.card {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  margin-bottom: 30px;
+  border:1px solid #eee;
+}
+.card-image {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 250px;
+  background-image: url(../images/everest.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.card-name {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.card-content {
+  padding: 30px 10px;
+  background-color: #fff;
+}
+.card-title {
+  margin-bottom: 20px;
+  color: grey;
+}
+.card-descr {
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.button {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 15px;
+  color: mediumseagreen; 
+  text-transform: uppercase;  
+} 
+.load-button {
+  margin: 0 auto;
+  display: block;
+  text-align: center; 
+  vertical-align: top;
+  width: 120px;
+  line-height: 50px;
+  background-color: mediumseagreen; 
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow:  0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+  padding: 45px 0;
+  color:#fff;
+  background-color: black;
+}
+.footer-link {
+  display: table;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.footer-link:last-child {
+  margin-bottom: 0;
+}
