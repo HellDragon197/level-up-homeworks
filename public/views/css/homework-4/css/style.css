@@ -37,6 +37,7 @@ a {
   clear: both;
 }
 .column {
+  vertical-align: top;
   width: 25%;
   padding: 0 15px;
   float: left;
