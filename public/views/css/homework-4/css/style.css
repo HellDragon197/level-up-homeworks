@@ -97,7 +97,7 @@ a {
   text-align: center;
   font-size: 80px
 }
-.content {
+.main {
   padding: 40px 0;
   background-image: url(../images/pattern.png);
 }
@@ -132,7 +132,7 @@ a {
   font-size: 20px;
 }
 .card-content {
-  padding: 30px 10px;
+  padding: 30px 10px 10px;
   background-color: #fff;
 }
 .card-title {
@@ -143,25 +143,41 @@ a {
   margin-bottom: 30px;
   line-height: 1.4;
 }
+.card-button {
+  background-color: #fff;
+  font-size: 0;
+  padding: 0 12px 12px;
+}
+.card-action {
+  margin-right: 10px;
+}
+.card-action:last-child {
+  margin-right: 0;
+}
 .button {
   display: inline-block;
-  font-size: 18px;
-  margin-right: 15px;
+  vertical-align: top;
+  height: 36px;
+  line-height: 36px;
+  min-width: 64px;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
   color: mediumseagreen; 
   text-transform: uppercase;  
 } 
-.load-button {
-  margin: 0 auto;
-  display: block;
-  text-align: center; 
-  vertical-align: top;
-  width: 120px;
-  line-height: 50px;
-  background-color: mediumseagreen; 
+.button-green {
+  background-color: mediumseagreen;
   color: #fff;
-  text-transform: uppercase;
-  border-radius: 3px;
-  box-shadow:  0 1px 2px rgba(0,0,0,0.24);
+}
+.button-size-medium {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+.load-more {
+  text-align: center;
 }
 .footer {
   padding: 45px 0;
