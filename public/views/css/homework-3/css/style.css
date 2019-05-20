@@ -11,6 +11,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
 
 /* unknown props */
 /* пример фонового цвета - background-color: #3F51B5; */
@@ -22,7 +25,6 @@ a {
   box-sizing: border-box;
 }
 .container {
-  font-size: 0;
   margin: 0 auto;
   width: 1170px;
   padding: 0 15px;
@@ -36,6 +38,9 @@ a {
   padding: 0 15px;
   display: inline-block;
 }
+.fix {
+  font-size: 0;
+}
 .header {
   width: 100%;
   background-color:#3F51B5;
@@ -45,7 +50,7 @@ a {
   z-index: 100;
   top: 0;
 }
-.link {
+.nav-link {
   font-size: 16px;
   display: inline-block;
   margin-right: 15px;
@@ -73,10 +78,6 @@ a {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
 }
 .card-image {
-  height: 200px;
-  background-image: url(../images/sample-1.jpg);
-  background-position: center;
-  background-size: cover;
   position: relative;
 }
 .favorite {
@@ -91,7 +92,7 @@ a {
   margin-bottom: 15px;
   font-size: 23px;
 }
-.card-descript {
+.card-descr {
   line-height: 1.3;
   margin-bottom: 15px;
 }
@@ -107,10 +108,10 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
 }
-.page {
+.pagination {
   text-align: center;
 }
-.item {
+.pagination-item {
   display: inline-block;
   text-decoration: underline;
   vertical-align: top;
@@ -118,10 +119,10 @@ a {
   padding: 5px;
   margin-right: 7px;
 }
-.item:last-child {
+.pagination-item:last-child {
   margin-right: 0;
 }
-.item-active {
+.pagination-item-active {
   text-decoration: none;
 }
 .footer {

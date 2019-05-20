@@ -1,0 +1,59 @@
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  padding: 40px;
+}
+.container {
+  padding: 0 15px;
+  margin:0 auto;
+}
+.list {
+  border:1px solid grey;
+}
+.list__item {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  border-collapse: collapse;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+  line-height: 36px;
+}
+.right {
+  float: right;
+  line-height: 36px;
+}
+.sprite {
+  outline: 1px solid;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -62px -222px;
+  vertical-align: top;
+}
+.descr {
+  display: inline-block;
+  vertical-align: top;
+}
+.list__status {
+  display: inline-block;
+  vertical-align: top;
+}
