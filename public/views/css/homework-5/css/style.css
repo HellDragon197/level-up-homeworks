@@ -27,11 +27,6 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media (min-width: 320px) {
-  .container {
-    width: 300px
-  }
-}
 
 @media (min-width: 544px) {
   .container {
@@ -39,15 +34,21 @@ a {
   }
 }
 
-@media (min-width: 744px) {
+@media (min-width: 768px) {
   .container {
-    width: 720px;
+    width: 748px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     width: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
   }
 }
 
@@ -66,46 +67,82 @@ a {
   padding:0 15px;
 }
 
-.col-xs-1 {
-  width: 50%;
-}
-.col-xs-2 {
-  width: 100%;
-}
 
 @media (min-width: 544px) {
-  .col-sm-1 {
-    width: 25%;
+   .col-sm-1 {
+    width: 8.3333%;
   }
   .col-sm-2 {
-    width: 50%;
+    width: 16.6666%;
   }
   .col-sm-3 {
-    width: 75%;
+    width: 25%;
   }
   .col-sm-4 {
-    width: 100%;
+    width: 33.33333%;
+  }
+  .col-sm-5 {
+    width: 41.666666%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.333333%;
+  }
+  .col-sm-8 {
+    width: 66.666666%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.333333%;
+  }
+  .col-sm-11 {
+    width: 91.666666%;
+  }
+  .col-sm-12 {
+    width: 100%
   }
 }
 
 @media (min-width: 768px) {
-  .col-md-1 {
-    width: 16.66%;
+   .col-md-1 {
+    width: 8.3333%;
   }
   .col-md-2 {
-    width: 33.33%;
+    width: 16.6666%;
   }
   .col-md-3 {
-    width: 50%;
+    width: 25%;
   }
   .col-md-4 {
-    width: 66.66%;
+    width: 33.33333%;
   }
   .col-md-5 {
-    width: 83.33%;
+    width: 41.666666%;
   }
   .col-md-6 {
-    width: 100%;
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.333333%;
+  }
+  .col-md-8 {
+    width: 66.666666%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.333333%;
+  }
+  .col-md-11 {
+    width: 91.666666%;
+  }
+  .col-md-12 {
+    width: 100%
   }
 }
 
@@ -149,40 +186,40 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .col-xlg-1 {
-    width: 8.33%;
+  .col-xl-1 {
+    width: 8.3333%;
   }
-  .col-xlg-2 {
-    width: 16.66%;
+  .col-xl-2 {
+    width: 16.6666%;
   }
-  .col-xlg-3 {
-    width: 24.99%;
+  .col-xl-3 {
+    width: 25%;
   }
-  .col-xlg-4 {
+  .col-xl-4 {
     width: 33.33333%;
   }
-  .col-xlg-5 {
+  .col-xl-5 {
     width: 41.666666%;
   }
-  .col-xlg-6 {
+  .col-xl-6 {
     width: 50%;
   }
-  .col-xlg-7 {
+  .col-xl-7 {
     width: 58.333333%;
   }
-  .col-xlg-8 {
+  .col-xl-8 {
     width: 66.666666%;
   }
-  .col-xlg-9 {
+  .col-xl-9 {
     width: 75%;
   }
-  .col-xlg-10 {
+  .col-xl-10 {
     width: 83.333333%;
   }
-  .col-xlg-11 {
+  .col-xl-11 {
     width: 91.666666%;
   }
-  .col-xlg-12 {
+  .col-xl-12 {
     width: 100%
   }
 }
@@ -237,7 +274,6 @@ a {
 .card-button {
   background-color: #fff;
   font-size: 0;
-  padding: 0 12px 12px;
 }
 .card-action {
   margin-right: 10px;
@@ -285,6 +321,7 @@ a {
   display: inline-block;
   padding-left: 35px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .checkbox-name:before {
@@ -292,7 +329,6 @@ a {
   position: absolute;
   border: 1px solid #000;
   left: 0;
-  bottom: 0;
   width: 20px;
   height: 20px;
   border-radius: 3px;
@@ -311,13 +347,11 @@ a {
   width: 8px;
   height: 13px;
   left: 6px;
-  bottom: 5px;
   transform: rotate(45deg);
 }
 
 .footer {
   text-align: center;
-  vertical-align: top;
   color: #fff;
   background-color: cadetblue;
   font-size: 20px;
