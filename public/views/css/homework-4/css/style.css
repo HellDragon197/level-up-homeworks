@@ -5,6 +5,7 @@ html {
 body {
   color: #444;
   font-family: Roboto, Arial, sans-serif;
+  background-image: url("../images/pattern.png");
 }
 
 a {
@@ -44,7 +45,6 @@ a {
 }
 .header {
   box-shadow: 0 2px 5px rgba(0,0,0,.26);
-  width: 100%;
   color: #fff;
   background-color: mediumseagreen;
   line-height: 60px;
@@ -62,20 +62,18 @@ a {
 }
 .nav-link {
   display: inline-block;
-  vertical-align: top;
   margin-right: 15px;
   position: relative;
   text-transform: uppercase;
 }
-.nav-aut-link {
+.nav-auth-link {
   display: inline-block;
-  vertical-align: top;
   margin-right: 15px;   
 }
 .nav-link:last-child {
   margin-right: 0;
 }
-.nav-aut-link:last-child {
+.nav-auth-link:last-child {
   margin-right: 0;
 }
 .nav-link-active:before {
@@ -100,7 +98,6 @@ a {
 }
 .main {
   padding: 40px 0;
-  background-image: url(../images/pattern.png);
 }
 .title {
   font-size: 25px;
@@ -118,7 +115,7 @@ a {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   height: 250px;
-  background-image: url(../images/everest.jpg);
+  background-image: url("../images/everest.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -126,14 +123,12 @@ a {
 .card-name {
   color: #fff;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  left: 10px;
+  bottom: 10px;
   font-size: 20px;
 }
 .card-content {
-  padding: 30px 10px 10px;
+  padding: 30px 10px 15px;
   background-color: #fff;
 }
 .card-title {
@@ -147,10 +142,12 @@ a {
 .card-button {
   background-color: #fff;
   font-size: 0;
-  padding: 0 12px 12px;
 }
 .card-action {
   margin-right: 10px;
+}
+.card-action:first-child {
+  padding-left: 0;
 }
 .card-action:last-child {
   margin-right: 0;
