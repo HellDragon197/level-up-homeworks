@@ -15,45 +15,78 @@ body {
   padding: 40px;
 }
 .container {
+  width: 980px;
   padding: 0 15px;
   margin:0 auto;
 }
 .list {
-  border:1px solid grey;
+  margin-bottom: 70px;
 }
-.list__item {
-  border-bottom: 1px solid grey;
+.blocks {
+  box-shadow: 2px 0px 22px 6px rgba(0, 0, 0, 0.15);
+  border: 1px solid #E9E6E6; 
+}
+.block {
   padding: 10px;
-  border-collapse: collapse;
+  border-bottom: 1px solid #E9E6E6;
+  display: table;
 }
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
+.block__cell {
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
 }
-.left {
-  float: left;
-  line-height: 36px;
-}
-.right {
-  float: right;
-  line-height: 36px;
-}
-.sprite {
-  outline: 1px solid;
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  background-image: url(../images/sprite.png);
+.block__icon {
+  width: 37px;
+  height: 37px;
+  background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
+  float: left;
+}
+.icon-people-position {
   background-position: -62px -222px;
-  vertical-align: top;
 }
-.descr {
-  display: inline-block;
-  vertical-align: top;
+.icon-finger-position {
+  background-position:-414px -383px; 
 }
-.list__status {
-  display: inline-block;
-  vertical-align: top;
+.icon-droid-position {
+  background-position: -30px -92px;
+}
+.block__text {
+  width: 100%;
+}
+.button-status {
+  float: right;
+  line-height: 20px;
+  color: white;
+  border-radius: 5px;
+}
+.button-status-approved {
+  background-color: green;
+}
+.button-status-pending {
+  background-color: orange;
+}
+.button-status-error {
+  background-color: red;
+}
+.block:last-child {
+  border-bottom: none;
+}
+
+.circle {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 20px 6px rgba(225,0,0,0.6) inset,
+    0px -20px 6px rgba(255,255,0,0.6) inset,
+    -20px -20px 6px rgba(255,0,255,0.6) inset,
+    20px 10px 6px rgba(0,255,255,0.6) inset,
+    20px 20px 6px rgba(0,225,0,0.6) inset,
+    -20px 0px 6px rgba(0,0,225,0.6) inset;
+}
+.gradient {
+  background: radial-gradient(circle, white, steelblue, darkblue);
+  background-size: 5px 5px;
 }
