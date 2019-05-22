@@ -79,10 +79,10 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 0px 20px 6px rgba(225,0,0,0.6) inset,
-    0px -20px 6px rgba(255,255,0,0.6) inset,
-    -20px -20px 6px rgba(255,0,255,0.6) inset,
-    20px 10px 6px rgba(0,255,255,0.6) inset,
+  box-shadow: 0px 30px 6px rgba(225,0,0,0.6) inset,
+    0px -30px 6px rgba(255,255,0,0.6) inset,
+    -30px -20px 6px rgba(255,0,255,0.6) inset,
+    30px 10px 6px rgba(0,255,255,0.6) inset,
     20px 20px 6px rgba(0,225,0,0.6) inset,
     -20px 0px 6px rgba(0,0,225,0.6) inset;
 }
