@@ -38,7 +38,6 @@ a {
   clear: both;
 }
 .column {
-  vertical-align: top;
   width: 25%;
   padding: 0 15px;
   float: left;
@@ -109,7 +108,7 @@ a {
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
   margin-bottom: 30px;
-  border:1px solid #eee;
+  border: 1px solid #eee;
 }
 .card-image {
   border-top-left-radius: 3px;
@@ -139,15 +138,12 @@ a {
   margin-bottom: 30px;
   line-height: 1.4;
 }
-.card-button {
+.card-buttons {
   background-color: #fff;
   font-size: 0;
 }
 .card-action {
   margin-right: 10px;
-}
-.card-action:first-child {
-  padding-left: 0;
 }
 .card-action:last-child {
   margin-right: 0;
@@ -179,7 +175,7 @@ a {
 }
 .footer {
   padding: 45px 0;
-  color:#fff;
+  color: #fff;
   background-color: black;
 }
 .footer-link {
