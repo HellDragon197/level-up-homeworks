@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* unknown props */
@@ -31,6 +31,7 @@ img {
 }
 .row {
   margin: 0 -15px;
+  font-size: 0;
 }
 .column {
   font-size: 16px;
@@ -38,12 +39,9 @@ img {
   padding: 0 15px;
   display: inline-block;
 }
-.fix {
-  font-size: 0;
-}
 .header {
   width: 100%;
-  background-color:#3F51B5;
+  background-color: #3F51B5;
   color: #fff; 
   line-height: 60px;
   position: fixed;
@@ -57,7 +55,7 @@ img {
   vertical-align: top;
   position: relative;
 }
-.link:last-child{
+.nav-link:last-child{
   margin-right: 0;
 }
 .link-active {
@@ -99,7 +97,7 @@ img {
 .button {
   display: inline-block;
   background-color: #3F51B5;
-  color:#fff;
+  color: #fff;
   vertical-align: top;
   text-align: center;
   width: 100%;

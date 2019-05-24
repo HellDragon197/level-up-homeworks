@@ -1,0 +1,66 @@
+*, :before, :after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+.loader {
+  margin: 80px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle, lightgray, gray, darkgray);
+}
+
+.loader__half {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loader__half--right {
+  right: 0;
+  left: auto;
+}
+.loader__indicator {
+  height: 100%;
+  width: 200%;
+  border: 8px solid lightblue;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-bottom-color: transparent;
+}
+.loader__indicator--left {
+  border-right-color: transparent;
+  transform: rotate(-225deg);
+  animation: rotate-left-side 5s 5s linear forwards;
+} 
+.loader__indicator--right {
+  border-left-color: transparent;
+  right: 0;
+  left: auto;
+  transform: rotate(-135deg);
+  animation: rotate-right-side 5s linear forwards;
+}
+@keyframes rotate-right-side {
+  from {
+    transform: rotate(-135deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes rotate-left-side {
+  from {
+    transform: rotate(-225deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
