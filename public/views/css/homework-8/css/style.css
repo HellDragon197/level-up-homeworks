@@ -48,6 +48,55 @@ html {
   transform: rotate(-135deg);
   animation: rotate-right-side 5s linear forwards;
 }
+.counter {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 80px auto;
+  display: block;
+}
+.counter:before {
+  content: "";
+  color: white;
+  animation: count 10s step-start backwards;
+}
+
+@keyframes count {
+  10% {
+    content: "1";
+  }
+  20% {
+    content: "2";
+  }
+  30% {
+    content: "3";
+  }
+  40% {
+    content: "4";
+  }
+  50% {
+    content: "5";
+  }
+  60% {
+    content: "6";
+  }
+  70% {
+    content: "7";
+  }
+  80% {
+    content: "8";
+  }
+  90% {
+    content: "9";
+  }
+  100% {
+    content: "10"
+  }
+}
 @keyframes rotate-right-side {
   from {
     transform: rotate(-135deg);
@@ -64,3 +113,4 @@ html {
     transform: rotate(-45deg);
   }
 }
+
