@@ -27,24 +27,24 @@ body {
   border: 1px solid #E9E6E6; 
 }
 .block {
-  padding: 10px;
+  padding: 15px;
   border-bottom: 1px solid #E9E6E6;
   display: table;
 }
-.block__cell {
+.block-cell {
   display: table-cell;
-  padding: 10px;
   vertical-align: middle;
 }
-.block__icon {
-  width: 37px;
-  height: 37px;
+.block-icon {
+  width: 36px;
+  height: 36px;
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  float: left;
+  display: inline-block;
+  margin-right: 15px;
 }
 .icon-people-position {
-  background-position: -62px -222px;
+  background-position: -62px -221px;
 }
 .icon-finger-position {
   background-position:-414px -383px; 
@@ -52,14 +52,16 @@ body {
 .icon-droid-position {
   background-position: -30px -92px;
 }
-.block__text {
+.block-text {
   width: 100%;
 }
-.button-status {
+.status {
   float: right;
-  line-height: 20px;
   color: white;
   border-radius: 5px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 15px;
 }
 .button-status-approved {
   background-color: green;
@@ -76,17 +78,15 @@ body {
 
 .circle {
   margin: 0 auto;
+  background: radial-gradient(circle, white, steelblue, darkblue);
+  background-size: 5px 5px;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 0px 30px 6px rgba(225,0,0,0.6) inset,
-    0px -30px 6px rgba(255,255,0,0.6) inset,
-    -30px -20px 6px rgba(255,0,255,0.6) inset,
-    30px 10px 6px rgba(0,255,255,0.6) inset,
-    20px 20px 6px rgba(0,225,0,0.6) inset,
-    -20px 0px 6px rgba(0,0,225,0.6) inset;
-}
-.gradient {
-  background: radial-gradient(circle, white, steelblue, darkblue);
-  background-size: 5px 5px;
+  box-shadow: 0px 30px 0px rgba(225,0,0,0.6) inset,
+    0px -30px 0px rgba(255,255,0,0.6) inset,
+    -30px -20px 0px rgba(255,0,255,0.6) inset,
+    30px 10px 0px rgba(0,255,255,0.6) inset,
+    20px 20px 0px rgba(0,225,0,0.6) inset,
+    -20px 0px 0px rgba(0,0,225,0.6) inset;
 }
