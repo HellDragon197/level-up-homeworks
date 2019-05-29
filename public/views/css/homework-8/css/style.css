@@ -48,7 +48,8 @@ html {
   transform: rotate(-135deg);
   animation: rotate-right-side 5s linear forwards;
 }
-.counter {
+.loader:before {
+  content: "";
   height: 200px;
   width: 200px;
   overflow: hidden;
@@ -58,14 +59,15 @@ html {
   text-align: center;
   margin: 80px auto;
   display: block;
-}
-.counter:before {
-  content: "";
   color: white;
-  animation: count 10s step-start backwards;
+  animation: count 10s 1s step-start forwards;
 }
 
+
 @keyframes count {
+  0% {
+    content: "";
+  }
   10% {
     content: "1";
   }
