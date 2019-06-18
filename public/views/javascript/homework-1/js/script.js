@@ -10,7 +10,7 @@ console.log(admin);
 var ourPlanetName;
 var visitorName;
 
-// Additional task 
+// Additional task 1
 var framePerSec;
 var connectorBetweenWord;
 var documentView;
